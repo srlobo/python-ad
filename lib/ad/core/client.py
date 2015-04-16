@@ -316,7 +316,7 @@ class Client(object):
         """Fixup the `filter' argument."""
         if filter is None:
             filter = '(objectClass=*)'
-        elif not isinstance(filter, str):
+        elif not isinstance(filter, basestring):
             raise TypeError, 'Illegal filter type: %s' % type(filter)
         return filter
 
