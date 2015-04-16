@@ -10,7 +10,7 @@ from setuptools import setup, Extension
 
 setup(
     name = 'python-ad',
-    version = '0.9',
+    version = '0.9.1',
     description = 'An AD client library for Python',
     author = 'Geert Jansen',
     author_email = 'geertj@gmail.com',
