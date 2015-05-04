@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #
 # This file is part of Python-AD. Python-AD is free software that is made
 # available under the MIT license. Consult the file "LICENSE" that is
@@ -10,7 +11,7 @@ from setuptools import setup, Extension
 
 setup(
     name = 'python-ad',
-    version = '0.9.1',
+    version = '0.9.2',
     description = 'An AD client library for Python',
     author = 'Geert Jansen',
     author_email = 'geertj@gmail.com',
