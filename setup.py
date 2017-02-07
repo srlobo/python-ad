@@ -11,7 +11,7 @@ from setuptools import setup, Extension
 
 setup(
     name = 'python-ad',
-    version = '0.9.2',
+    version = '0.9.3',
     description = 'An AD client library for Python',
     author = 'Geert Jansen',
     author_email = 'geertj@gmail.com',
@@ -23,7 +23,7 @@ setup(
         'Programming Language :: Python'],
     package_dir = {'': 'lib'},
     packages = ['ad', 'ad.core', 'ad.protocol', 'ad.util'],
-    install_requires = [ 'python-ldap', 'dnspython', 'ply' ],
+    install_requires = [ 'python-ldap==2.4.29', 'dnspython==1.15.0', 'ply==3.10' ],
     ext_modules = [Extension('ad.protocol.krb5', ['lib/ad/protocol/krb5.c'],
                              libraries=['krb5'])],
     test_suite = 'nose.collector'
